@@ -1,4 +1,4 @@
-//
+package com.java.medium.DynamicProgramming;//
 //Given an array of non-negative integers, you are initially positioned at the first index of the array.
 //
 //        Each element in the array represents your maximum jump length at that position.
@@ -40,10 +40,10 @@ public class JumpGame {
         table[nums.length - 1] = Index.Good;
 
         for(int i = nums.length - 2; i >= 0; i--){
-            int furthestJump = Math.Min(i + nums[i], nums.length - 1);
+            int furthestJump = Math.min(i + nums[i], nums.length - 1);
             for (int j = i + 1; j < furthestJump; j++){
                 if (table[j] == Index.Good){
-                    table[i] == Index.Good;
+                    table[i] = Index.Good;
                     break;
                 }
             }
