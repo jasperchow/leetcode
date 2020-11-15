@@ -1,4 +1,4 @@
-//Write an algorithm to determine if a number n is "happy".
+package com.java.medium.Math;//Write an algorithm to determine if a number n is "happy".
 //
 //        A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
 //
@@ -14,8 +14,11 @@
 //        62 + 82 = 100
 //        12 + 02 + 02 = 1
 
-public class JumpGame{
-    public JumpGame(){}
+import java.util.HashSet;
+import java.util.Set;
+
+public class HappyNumber{
+    public HappyNumber(){}
 
     public boolean isHappy(int n) {
         Set<Integer> hashSet = new HashSet<Integer>();
