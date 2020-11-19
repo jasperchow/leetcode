@@ -11,6 +11,8 @@
 
 # Note: The length of path between two nodes is represented by the number of edges between them.
 
+# https://leetcode.com/problems/diameter-of-binary-tree/solution/
+
 # Definition for a binary tree node.
 
 # 思路： recursive max of any given node = max left + max right + 1
